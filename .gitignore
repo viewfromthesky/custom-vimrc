@@ -1,0 +1,7 @@
+vimfiles/
+vim81/
+plugged/
+
+*.swp
+*.old
+*~
