@@ -6,6 +6,7 @@ Plug 'OrangeT/vim-csharp'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-bufferline'
 Plug 'vim-scripts/AutoComplPop'
+Plug 'airblade/vim-gitgutter'
 
 " Colour schemes
 Plug 'shinchu/lightline-gruvbox.vim'
@@ -28,8 +29,6 @@ set guioptions-=T "remove toolbar
 set guioptions-=r "remove right hand scroll bar
 set guioptions-=L "remove left hand scroll bar
 
-map <F9> :NERDTreeToggle<CR>
-map <F10> :NERDTreeFocus<CR>
 map <Tab> :bnext<CR>
 map <S-Tab> :bprevious<CR>
 
@@ -38,7 +37,7 @@ let g:lightline = {
 	\ 'colorscheme': 'challenger_deep',
 	\ 'active': {
 	\	'left': [ [ 'mode', 'paste' ], 
-	\			  [ 'fugitive', 'filename', 'modified' ] ],
+	\			  [ 'filename', 'modified' ] ],
 	\ },
 	\ 'component_function': {
 	\ 	'fugitive': 'fugitive#statusline'
