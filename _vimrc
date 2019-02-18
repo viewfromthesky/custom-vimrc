@@ -5,13 +5,13 @@ Plug 'mattn/emmet-vim'
 Plug 'OrangeT/vim-csharp'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-bufferline'
-Plug 'vim-scripts/AutoComplPop'
 Plug 'airblade/vim-gitgutter'
 
 " Colour schemes
 Plug 'shinchu/lightline-gruvbox.vim'
-Plug 'patstockwell/vim-monokai-tasty'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'altercation/vim-colors-solarized'
+Plug 'jnurmine/Zenburn'
 
 call plug#end()
 
@@ -22,7 +22,7 @@ set tabstop=4
 set shiftwidth=4
 set noexpandtab
 set breakindent
-set number
+set number rnu
 
 set guioptions-=m "remove menu bar
 set guioptions-=T "remove toolbar
@@ -34,18 +34,24 @@ map <S-Tab> :bprevious<CR>
 
 set laststatus=2
 let g:lightline = {
-	\ 'colorscheme': 'challenger_deep',
+	\ 'colorscheme': 'seoul256',
 	\ 'active': {
 	\	'left': [ [ 'mode', 'paste' ], 
-	\			  [ 'filename', 'modified' ] ],
+	\			  [ 'filename' ] ],
 	\ },
 	\ 'component_function': {
-	\ 	'fugitive': 'fugitive#statusline'
+	\ 	'filename': 'LightlineFilename'
 	\ },
 	\ }
 
+function! LightlineFilename()
+	let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+	let modified = &modified ? '+' : ''
+	return filename . modified
+endfunction
+
 set t_Co=256
 set background=dark
-colorscheme challenger_deep
+colorscheme zenburn
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
