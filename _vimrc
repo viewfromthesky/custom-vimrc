@@ -7,7 +7,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-bufferline'
 Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
-"Plug 'bagrat/vim-buffet'
 Plug 'ctrlpvim/ctrlp.vim'
 
 " Colour schemes
@@ -34,6 +33,8 @@ set guioptions-=L "remove left hand scroll bar
 
 map <Tab> :bnext<CR>
 map <S-Tab> :bprevious<CR>
+
+let g:ctrlp_map = '<c-p>'
 
 set laststatus=2
 let g:lightline = {
