@@ -6,6 +6,9 @@ Plug 'OrangeT/vim-csharp'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-bufferline'
 Plug 'airblade/vim-gitgutter'
+Plug 'w0rp/ale'
+"Plug 'bagrat/vim-buffet'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " Colour schemes
 Plug 'shinchu/lightline-gruvbox.vim'
@@ -55,3 +58,4 @@ set background=dark
 colorscheme zenburn
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
+let g:netrw_liststyle = 3
