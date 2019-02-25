@@ -7,6 +7,8 @@ Plug 'OrangeT/vim-csharp'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-bufferline'
 Plug 'airblade/vim-gitgutter'
+Plug 'w0rp/ale'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " -- Colour schemes
 Plug 'shinchu/lightline-gruvbox.vim'
@@ -36,6 +38,7 @@ set guioptions-=L "remove left hand scroll bar
 " --- Custom keymaps ---
 map <Tab> :bnext<CR>
 map <S-Tab> :bprevious<CR>
+let g:ctrlp_map = '<c-p>'
 
 " --- Lightline options ---
 set laststatus=2
@@ -62,3 +65,4 @@ set background=dark
 colorscheme zenburn
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
+let g:netrw_liststyle = 3

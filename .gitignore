@@ -1,4 +1,5 @@
-vimfiles/
+vimfiles/autoload/
+vimfiles/bundle/
 vim81/
 plugged/
 
