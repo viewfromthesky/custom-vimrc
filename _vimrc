@@ -1,3 +1,4 @@
+" --- Plugins ---
 call plug#begin('$HOME/Vim/plugged')
 
 Plug 'itchyny/lightline.vim'
@@ -7,7 +8,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-bufferline'
 Plug 'airblade/vim-gitgutter'
 
-" Colour schemes
+" -- Colour schemes
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'altercation/vim-colors-solarized'
@@ -15,7 +16,9 @@ Plug 'jnurmine/Zenburn'
 
 call plug#end()
 
-set guifont=IBM_Plex_Mono:h10:cANSI:qDRAFT
+" --- Text settings ---
+"set guifont=IBM_Plex_Mono:h10:cANSI:qDRAFT
+set guifont=M+_1m:h11:cANSI:qDRAFT
 syntax on
 
 set tabstop=4
@@ -24,14 +27,17 @@ set noexpandtab
 set breakindent
 set number rnu
 
+" --- GUI options ---
 set guioptions-=m "remove menu bar
 set guioptions-=T "remove toolbar
 set guioptions-=r "remove right hand scroll bar
 set guioptions-=L "remove left hand scroll bar
 
+" --- Custom keymaps ---
 map <Tab> :bnext<CR>
 map <S-Tab> :bprevious<CR>
 
+" --- Lightline options ---
 set laststatus=2
 let g:lightline = {
 	\ 'colorscheme': 'seoul256',
@@ -50,6 +56,7 @@ function! LightlineFilename()
 	return filename . modified
 endfunction
 
+" --- Colour scheme ---
 set t_Co=256
 set background=dark
 colorscheme zenburn
