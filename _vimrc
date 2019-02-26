@@ -15,6 +15,7 @@ Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'altercation/vim-colors-solarized'
 Plug 'jnurmine/Zenburn'
+Plug 'nightsense/cosmic_latte'
 
 call plug#end()
 
@@ -43,7 +44,7 @@ let g:ctrlp_map = '<c-p>'
 " --- Lightline options ---
 set laststatus=2
 let g:lightline = {
-	\ 'colorscheme': 'seoul256',
+	\ 'colorscheme': 'cosmic_latte_light',
 	\ 'active': {
 	\	'left': [ [ 'mode', 'paste' ], 
 	\			  [ 'filename' ] ],
@@ -61,8 +62,8 @@ endfunction
 
 " --- Colour scheme ---
 set t_Co=256
-set background=dark
-colorscheme zenburn
+set background=light
+colorscheme cosmic_latte
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 let g:netrw_liststyle = 3
