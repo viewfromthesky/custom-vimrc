@@ -15,12 +15,17 @@ Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'altercation/vim-colors-solarized'
 Plug 'jnurmine/Zenburn'
+Plug 'aereal/vim-colors-japanesque'
+Plug 'zeis/vim-kolor'
+Plug 'morhetz/gruvbox'
+Plug 'rakr/vim-two-firewatch'
 
 call plug#end()
 
 " --- Text settings ---
 "set guifont=IBM_Plex_Mono:h10:cANSI:qDRAFT
-set guifont=M+_1m:h11:cANSI:qDRAFT
+"set guifont=M+_1m:h11:cANSI:qDRAFT
+set guifont=Fantasque_Sans_Mono:h11:cANSI:qDRAFT
 syntax on
 
 set tabstop=4
@@ -43,7 +48,7 @@ let g:ctrlp_map = '<c-p>'
 " --- Lightline options ---
 set laststatus=2
 let g:lightline = {
-	\ 'colorscheme': 'seoul256',
+	\ 'colorscheme': 'twofirewatch',
 	\ 'active': {
 	\	'left': [ [ 'mode', 'paste' ], 
 	\			  [ 'filename' ] ],
@@ -62,7 +67,7 @@ endfunction
 " --- Colour scheme ---
 set t_Co=256
 set background=dark
-colorscheme zenburn
+colorscheme two-firewatch
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 let g:netrw_liststyle = 3
