@@ -27,8 +27,8 @@ call plug#end()
 
 " --- Text settings ---
 "set guifont=IBM_Plex_Mono:h10:cANSI:qDRAFT
-"set guifont=M+_1m:h11:cANSI:qDRAFT
-set guifont=Fantasque_Sans_Mono:h11:cANSI:qDRAFT
+set guifont=M+_1m:h11:cANSI:qDRAFT
+"set guifont=Fantasque_Sans_Mono:h11:cANSI:qDRAFT
 syntax on
 
 set tabstop=4
