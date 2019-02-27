@@ -19,6 +19,7 @@ Plug 'aereal/vim-colors-japanesque'
 Plug 'zeis/vim-kolor'
 Plug 'morhetz/gruvbox'
 Plug 'rakr/vim-two-firewatch'
+Plug 'nightsense/cosmic_latte'
 
 call plug#end()
 
@@ -50,7 +51,7 @@ set laststatus=2
 let g:lightline = {
 	\ 'colorscheme': 'twofirewatch',
 	\ 'active': {
-	\	'left': [ [ 'mode', 'paste' ], 
+	\	'left': [ [ 'mode', 'paste' ],
 	\			  [ 'filename' ] ],
 	\ },
 	\ 'component_function': {
