@@ -20,6 +20,8 @@ Plug 'zeis/vim-kolor'
 Plug 'morhetz/gruvbox'
 Plug 'rakr/vim-two-firewatch'
 Plug 'nightsense/cosmic_latte'
+Plug 'AlessandroYorba/Sierra'
+Plug 'KeitaNakamura/neodark.vim'
 
 call plug#end()
 
@@ -40,6 +42,7 @@ set guioptions-=m "remove menu bar
 set guioptions-=T "remove toolbar
 set guioptions-=r "remove right hand scroll bar
 set guioptions-=L "remove left hand scroll bar
+let g:neodark#background = '#202020'
 
 " --- Custom keymaps ---
 map <Tab> :bnext<CR>
@@ -49,7 +52,7 @@ let g:ctrlp_map = '<c-p>'
 " --- Lightline options ---
 set laststatus=2
 let g:lightline = {
-	\ 'colorscheme': 'twofirewatch',
+	\ 'colorscheme': 'neodark',
 	\ 'active': {
 	\	'left': [ [ 'mode', 'paste' ],
 	\			  [ 'filename' ] ],
@@ -68,7 +71,8 @@ endfunction
 " --- Colour scheme ---
 set t_Co=256
 set background=dark
-colorscheme two-firewatch
+colorscheme neodark
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
+
 let g:netrw_liststyle = 3
